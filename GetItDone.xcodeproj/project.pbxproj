@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E4C862CF273449A000DD247C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862CE273449A000DD247C /* AppDelegate.swift */; };
 		E4C862D1273449A000DD247C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862D0273449A000DD247C /* SceneDelegate.swift */; };
-		E4C862D3273449A000DD247C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862D2273449A000DD247C /* ViewController.swift */; };
+		E4C862D3273449A000DD247C /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862D2273449A000DD247C /* WelcomeController.swift */; };
 		E4C862D9273449A000DD247C /* GetItDone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4C862D7273449A000DD247C /* GetItDone.xcdatamodeld */; };
 		E4C862DB273449A100DD247C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C862DA273449A100DD247C /* Assets.xcassets */; };
 		E4C862DE273449A100DD247C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C862DC273449A100DD247C /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		E4C862CB273449A000DD247C /* GetItDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetItDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C862CE273449A000DD247C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4C862D0273449A000DD247C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4C862D2273449A000DD247C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4C862D2273449A000DD247C /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		E4C862D8273449A000DD247C /* GetItDone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GetItDone.xcdatamodel; sourceTree = "<group>"; };
 		E4C862DA273449A100DD247C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4C862DD273449A100DD247C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,9 +99,11 @@
 		E4C862CD273449A000DD247C /* GetItDone */ = {
 			isa = PBXGroup;
 			children = (
+				E4C8630C27344AEA00DD247C /* Controller */,
+				E4C8630B27344AE300DD247C /* View */,
+				E4C8630A27344AD500DD247C /* Model */,
 				E4C862CE273449A000DD247C /* AppDelegate.swift */,
 				E4C862D0273449A000DD247C /* SceneDelegate.swift */,
-				E4C862D2273449A000DD247C /* ViewController.swift */,
 				E4C862DA273449A100DD247C /* Assets.xcassets */,
 				E4C862DC273449A100DD247C /* LaunchScreen.storyboard */,
 				E4C862DF273449A100DD247C /* Info.plist */,
@@ -126,6 +128,28 @@
 				E4C862F5273449A200DD247C /* Info.plist */,
 			);
 			path = GetItDoneUITests;
+			sourceTree = "<group>";
+		};
+		E4C8630A27344AD500DD247C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4C8630B27344AE300DD247C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4C8630C27344AEA00DD247C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4C862D2273449A000DD247C /* WelcomeController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4C862D3273449A000DD247C /* ViewController.swift in Sources */,
+				E4C862D3273449A000DD247C /* WelcomeController.swift in Sources */,
 				E4C862D9273449A000DD247C /* GetItDone.xcdatamodeld in Sources */,
 				E4C862CF273449A000DD247C /* AppDelegate.swift in Sources */,
 				E4C862D1273449A000DD247C /* SceneDelegate.swift in Sources */,
