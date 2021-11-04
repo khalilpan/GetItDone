@@ -12,7 +12,7 @@ class WelcomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .cyan
+        print("Test View Did Load")
     }
 
 
