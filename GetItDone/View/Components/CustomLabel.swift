@@ -14,7 +14,7 @@ class CustomLabel: UILabel {
         
         self.text = title
         self.textColor = color
-        self.font = UIFont.systemFont(ofSize: size)
+        self.font = UIFont.init(name: "Raleway-Regular", size: size)
         self.textAlignment = textAlignment
     }
     

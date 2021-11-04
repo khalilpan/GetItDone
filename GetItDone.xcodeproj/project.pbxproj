@@ -10,6 +10,7 @@
 		E438D93E273451C700D86ADD /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438D93D273451C700D86ADD /* CodeView.swift */; };
 		E438D943273456AF00D86ADD /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438D942273456AF00D86ADD /* BackgroundGradient.swift */; };
 		E47FEB3F2734746C00682642 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47FEB3E2734746C00682642 /* CustomLabel.swift */; };
+		E47FEB4527347A1400682642 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47FEB4427347A1400682642 /* Raleway-Regular.ttf */; };
 		E4C862CF273449A000DD247C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862CE273449A000DD247C /* AppDelegate.swift */; };
 		E4C862D1273449A000DD247C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862D0273449A000DD247C /* SceneDelegate.swift */; };
 		E4C862D3273449A000DD247C /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862D2273449A000DD247C /* WelcomeController.swift */; };
@@ -42,6 +43,7 @@
 		E438D93D273451C700D86ADD /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		E438D942273456AF00D86ADD /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
 		E47FEB3E2734746C00682642 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		E47FEB4427347A1400682642 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		E4C862CB273449A000DD247C /* GetItDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetItDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C862CE273449A000DD247C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4C862D0273449A000DD247C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		E47FEB43273478E400682642 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E47FEB4427347A1400682642 /* Raleway-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		E4C862C2273449A000DD247C = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		E4C862CD273449A000DD247C /* GetItDone */ = {
 			isa = PBXGroup;
 			children = (
+				E47FEB43273478E400682642 /* fonts */,
 				E4E9C9AB27345BE400D48C62 /* extentions */,
 				E4C8630C27344AEA00DD247C /* Controller */,
 				E4C8630B27344AE300DD247C /* View */,
@@ -284,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4C862DE273449A100DD247C /* LaunchScreen.storyboard in Resources */,
+				E47FEB4527347A1400682642 /* Raleway-Regular.ttf in Resources */,
 				E4C862DB273449A100DD247C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
