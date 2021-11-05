@@ -9,6 +9,7 @@ import UIKit
 
 class CustomHeader: UIView {
     let background = BackgroundGradient()
+    var delegate: CustomHeaderProtocol?
     
     lazy var titleLable: UILabel = {
         let view = CustomLabel(size: 14)
@@ -22,6 +23,7 @@ class CustomHeader: UIView {
     
     lazy var addbutton : UIButton = {
         let view = CustomButton(title: "+", type: .squareIcon)
+        view.addTarget(self, action: #selector(self.handleAddButton), for: .touchUpInside)
         return view
     }()
     
@@ -37,7 +39,14 @@ class CustomHeader: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    @objc func handleAddButton() {
+        delegate?.addItem()
+    }
+    
 }
+
+//MARK: - CodeView
 
 extension CustomHeader: CodeView {
     func buildView() {

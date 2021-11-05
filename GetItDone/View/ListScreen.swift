@@ -8,9 +8,11 @@
 import UIKit
 
 class ListScreen: UIView {
+    var addItemAction: (() -> Void)?
     
     lazy var headerView: UIView = {
         let view = CustomHeader(title: "Stuff to get done.", subTitle: "0 Left")
+        view.delegate = self
         return view
     }()
     
@@ -48,5 +50,12 @@ extension ListScreen: CodeView {
         
     }
     
-    
+}
+
+//MARK: - CustomHeaderProtocol
+
+extension ListScreen: CustomHeaderProtocol {
+    func addItem() {
+        addItemAction?()
+    }  
 }

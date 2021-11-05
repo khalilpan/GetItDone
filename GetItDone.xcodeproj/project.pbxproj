@@ -17,6 +17,7 @@
 		E44FE88827354CA90043A0C8 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FE88727354CA90043A0C8 /* CustomHeader.swift */; };
 		E47FEB3F2734746C00682642 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47FEB3E2734746C00682642 /* CustomLabel.swift */; };
 		E47FEB4527347A1400682642 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E47FEB4427347A1400682642 /* Raleway-Regular.ttf */; };
+		E4B6FBDD2735ACF900FE72A1 /* CustomHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6FBDC2735ACF900FE72A1 /* CustomHeaderProtocol.swift */; };
 		E4C862CF273449A000DD247C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862CE273449A000DD247C /* AppDelegate.swift */; };
 		E4C862D1273449A000DD247C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862D0273449A000DD247C /* SceneDelegate.swift */; };
 		E4C862D3273449A000DD247C /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C862D2273449A000DD247C /* WelcomeController.swift */; };
@@ -56,6 +57,7 @@
 		E44FE88727354CA90043A0C8 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
 		E47FEB3E2734746C00682642 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		E47FEB4427347A1400682642 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		E4B6FBDC2735ACF900FE72A1 /* CustomHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderProtocol.swift; sourceTree = "<group>"; };
 		E4C862CB273449A000DD247C /* GetItDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetItDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C862CE273449A000DD247C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4C862D0273449A000DD247C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				E4C862CE273449A000DD247C /* AppDelegate.swift */,
 				E4C862D0273449A000DD247C /* SceneDelegate.swift */,
 				E438D93D273451C700D86ADD /* CodeView.swift */,
+				E4B6FBDC2735ACF900FE72A1 /* CustomHeaderProtocol.swift */,
 				E47FEB43273478E400682642 /* fonts */,
 				E4E9C9AB27345BE400D48C62 /* extentions */,
 				E4C8630C27344AEA00DD247C /* Controller */,
@@ -351,6 +354,7 @@
 				E438D93E273451C700D86ADD /* CodeView.swift in Sources */,
 				E4C862D1273449A000DD247C /* SceneDelegate.swift in Sources */,
 				E438D943273456AF00D86ADD /* BackgroundGradient.swift in Sources */,
+				E4B6FBDD2735ACF900FE72A1 /* CustomHeaderProtocol.swift in Sources */,
 				E47FEB3F2734746C00682642 /* CustomLabel.swift in Sources */,
 				E43EEE7D27358DD000D8264C /* OptionSet.swift in Sources */,
 			);
