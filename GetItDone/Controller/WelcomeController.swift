@@ -60,7 +60,13 @@ class WelcomeController: UIViewController {
                 // will run when action got complete(will change button size back)
                 self.nextButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             }
-            self.present(ListController(), animated: true, completion: nil)
+            
+            let listController = ListController()
+            //to force modal presentation of new screen to be fullScreen
+            listController.modalPresentationStyle = .fullScreen
+            
+            //open new screen(ViewController)
+            self.present(listController, animated: true, completion: nil)
         }
     }
 }
