@@ -8,6 +8,7 @@
 import UIKit
 
 class WelcomeScreen: UIView {
+    
     var buttonPressAction: (() -> Void)?
 
     lazy var backGround: UIView = {
