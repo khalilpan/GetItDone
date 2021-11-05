@@ -10,7 +10,7 @@ import UIKit
 class CustomButton: UIButton {
 //    let buttonColor = UIColor.init(red: CGFloat(66)/255.0, green: CGFloat(1)/255.0, blue: CGFloat(66)/255.0, alpha: 100)
     
-    init(title: String = "Button Title", frame: CGRect = .zero) {
+    init(title: String = "Button Title", frame: CGRect = .zero, type: ButtonOptions = .roundedText) {
         super.init(frame: frame)
         
         self.setTitle(title, for: .normal)
