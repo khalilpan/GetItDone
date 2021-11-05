@@ -50,7 +50,6 @@ class WelcomeController: UIViewController {
     }
 
     @objc func handleButtonPress() {
-        print("Next Button clicked.")
 
         // to add animation when button pressed
         UIView.animate(withDuration: 0.1, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn) {
@@ -61,6 +60,7 @@ class WelcomeController: UIViewController {
                 // will run when action got complete(will change button size back)
                 self.nextButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             }
+            self.present(ListController(), animated: true, completion: nil)
         }
     }
 }
