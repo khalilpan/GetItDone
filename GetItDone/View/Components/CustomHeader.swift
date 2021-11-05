@@ -20,6 +20,11 @@ class CustomHeader: UIView {
         return view
     }()
     
+    lazy var addbutton : UIButton = {
+        let view = CustomButton(title: "+", type: .squareIcon)
+        return view
+    }()
+    
     init(title: String = "default title.", subTitle:String = "default subTitle.", frame: CGRect = .zero) {
         super.init(frame: frame)
         
@@ -39,6 +44,7 @@ extension CustomHeader: CodeView {
         addSubview(background)
         addSubview(titleLable)
         addSubview(subTitleLable)
+        addSubview(addbutton)
     }
     
     func setupConstraints() {
@@ -49,13 +55,16 @@ extension CustomHeader: CodeView {
         constraints.append(background.bottomAnchor.constraint(equalTo: bottomAnchor))
         constraints.append(background.trailingAnchor.constraint(equalTo: trailingAnchor))
         
+        constraints.append(titleLable.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10))
         constraints.append(titleLable.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50))
         constraints.append(titleLable.trailingAnchor.constraint(equalTo: centerXAnchor))
-        constraints.append(titleLable.centerYAnchor.constraint(equalTo: centerYAnchor))
         
         constraints.append(subTitleLable.leadingAnchor.constraint(equalTo: titleLable.leadingAnchor))
         constraints.append(subTitleLable.trailingAnchor.constraint(equalTo: titleLable.trailingAnchor, constant: 50))
-        constraints.append(subTitleLable.topAnchor.constraint(equalTo: titleLable.bottomAnchor,constant: 5))
+        constraints.append(subTitleLable.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5))
+        
+        constraints.append(addbutton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10))
+        constraints.append(addbutton.bottomAnchor.constraint(equalTo: subTitleLable.bottomAnchor))
         
         NSLayoutConstraint.activate(constraints)
         

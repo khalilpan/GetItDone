@@ -13,7 +13,7 @@ class CustomButton: UIButton {
     init(title: String = "Button Title", frame: CGRect = .zero, type: ButtonOptions = .roundedText) {
         super.init(frame: frame)
 
-
+        translatesAutoresizingMaskIntoConstraints = false
 
         switch type {
         case .roundedText:
@@ -26,6 +26,10 @@ class CustomButton: UIButton {
             }
             break;
         case .squareIcon:
+            setTitle(title, for: .normal)
+            layer.cornerRadius = 10
+            backgroundColor = .white
+            setTitleColor(.gray, for: .normal)
             break
         default:
             break

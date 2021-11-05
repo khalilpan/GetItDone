@@ -39,7 +39,7 @@ extension ListScreen: CodeView {
         constraints.append(headerView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor))
         constraints.append(headerView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor))
         constraints.append(headerView.topAnchor.constraint(equalTo: topAnchor))
-        constraints.append(headerView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.15))
+        constraints.append(headerView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.15))
         
         NSLayoutConstraint.activate(constraints)
     }
