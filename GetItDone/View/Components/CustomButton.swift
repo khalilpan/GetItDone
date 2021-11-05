@@ -13,23 +13,20 @@ class CustomButton: UIButton {
     init(title: String = "Button Title", frame: CGRect = .zero, type: ButtonOptions = .roundedText) {
         super.init(frame: frame)
 
+        setTitle(title, for: .normal)
+        backgroundColor = .white
+        setTitleColor(.gray, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
 
         switch type {
         case .roundedText:
-            setTitle(title, for: .normal)
             layer.cornerRadius = 25
-            backgroundColor = .white
-            setTitleColor(.gray, for: .normal)
             if let titleLabel = self.titleLabel {
                 titleLabel.font = UIFont(name: "Raleway-Regular", size: 16)
             }
             break;
         case .squareIcon:
-            setTitle(title, for: .normal)
             layer.cornerRadius = 10
-            backgroundColor = .white
-            setTitleColor(.gray, for: .normal)
             break
         default:
             break
