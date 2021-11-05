@@ -11,7 +11,7 @@ class CustomHeader: UIView {
     let background = BackgroundGradient()
     
     lazy var titleLable: UILabel = {
-        let view = CustomLabel(size: 18)
+        let view = CustomLabel(size: 14)
         return view
     }()
     
@@ -20,7 +20,7 @@ class CustomHeader: UIView {
         return view
     }()
     
-    init(title: String = "header title", subTitle:String = "subTitle String", frame: CGRect = .zero) {
+    init(title: String = "default title.", subTitle:String = "default subTitle.", frame: CGRect = .zero) {
         super.init(frame: frame)
         
         self.titleLable.text = title
@@ -54,7 +54,7 @@ extension CustomHeader: CodeView {
         constraints.append(titleLable.centerYAnchor.constraint(equalTo: centerYAnchor))
         
         constraints.append(subTitleLable.leadingAnchor.constraint(equalTo: titleLable.leadingAnchor))
-        constraints.append(subTitleLable.trailingAnchor.constraint(equalTo: titleLable.trailingAnchor))
+        constraints.append(subTitleLable.trailingAnchor.constraint(equalTo: titleLable.trailingAnchor, constant: 50))
         constraints.append(subTitleLable.topAnchor.constraint(equalTo: titleLable.bottomAnchor,constant: 5))
         
         NSLayoutConstraint.activate(constraints)

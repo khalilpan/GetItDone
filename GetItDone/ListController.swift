@@ -10,7 +10,7 @@ import UIKit
 class ListController: UIViewController{
     
     lazy var headerView: UIView = {
-        let view = CustomHeader()
+        let view = CustomHeader(title: "Stuff to get done.", subTitle: "0 Left")
         return view
     }()
     

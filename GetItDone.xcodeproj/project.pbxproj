@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E438D93E273451C700D86ADD /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438D93D273451C700D86ADD /* CodeView.swift */; };
 		E438D943273456AF00D86ADD /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438D942273456AF00D86ADD /* BackgroundGradient.swift */; };
+		E43EEE7D27358DD000D8264C /* OptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43EEE7C27358DD000D8264C /* OptionSet.swift */; };
 		E44FE87E27353DBC0043A0C8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FE87D27353DBC0043A0C8 /* CustomButton.swift */; };
 		E44FE88327354A3A0043A0C8 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FE88227354A3A0043A0C8 /* ListController.swift */; };
 		E44FE88827354CA90043A0C8 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FE88727354CA90043A0C8 /* CustomHeader.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		E438D93D273451C700D86ADD /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		E438D942273456AF00D86ADD /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
+		E43EEE7C27358DD000D8264C /* OptionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSet.swift; sourceTree = "<group>"; };
 		E44FE87D27353DBC0043A0C8 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E44FE88227354A3A0043A0C8 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListController.swift; path = GetItDone/ListController.swift; sourceTree = SOURCE_ROOT; };
 		E44FE88727354CA90043A0C8 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				E4E9C9AC27345C0800D48C62 /* UiColorExtention.swift */,
+				E43EEE7C27358DD000D8264C /* OptionSet.swift */,
 			);
 			path = extentions;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				E4C862D1273449A000DD247C /* SceneDelegate.swift in Sources */,
 				E438D943273456AF00D86ADD /* BackgroundGradient.swift in Sources */,
 				E47FEB3F2734746C00682642 /* CustomLabel.swift in Sources */,
+				E43EEE7D27358DD000D8264C /* OptionSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
