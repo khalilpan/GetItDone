@@ -10,9 +10,22 @@ import UIKit
 class CustomHeader: UIView {
     let background = BackgroundGradient()
     
+    lazy var titleLable: UILabel = {
+        let view = CustomLabel(size: 18)
+        return view
+    }()
+    
+    lazy var subTitleLable: UILabel = {
+        let view = CustomLabel(size: 24)
+        return view
+    }()
+    
     init(title: String = "header title", subTitle:String = "subTitle String", frame: CGRect = .zero) {
         super.init(frame: frame)
         
+        self.titleLable.text = title
+        self.subTitleLable.text = subTitle
+        self.translatesAutoresizingMaskIntoConstraints = false
         setupView()
     }
 
@@ -24,16 +37,25 @@ class CustomHeader: UIView {
 extension CustomHeader: CodeView {
     func buildView() {
         addSubview(background)
+        addSubview(titleLable)
+        addSubview(subTitleLable)
     }
     
     func setupConstraints() {
         var constraints = [NSLayoutConstraint]()
         
-        constraints.append(background.leftAnchor.constraint(equalTo: leftAnchor))
+        constraints.append(background.leadingAnchor.constraint(equalTo: leadingAnchor))
         constraints.append(background.topAnchor.constraint(equalTo: topAnchor))
         constraints.append(background.bottomAnchor.constraint(equalTo: bottomAnchor))
-        constraints.append(background.rightAnchor.constraint(equalTo: rightAnchor))
+        constraints.append(background.trailingAnchor.constraint(equalTo: trailingAnchor))
         
+        constraints.append(titleLable.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50))
+        constraints.append(titleLable.trailingAnchor.constraint(equalTo: centerXAnchor))
+        constraints.append(titleLable.centerYAnchor.constraint(equalTo: centerYAnchor))
+        
+        constraints.append(subTitleLable.leadingAnchor.constraint(equalTo: titleLable.leadingAnchor))
+        constraints.append(subTitleLable.trailingAnchor.constraint(equalTo: titleLable.trailingAnchor))
+        constraints.append(subTitleLable.topAnchor.constraint(equalTo: titleLable.bottomAnchor,constant: 5))
         
         NSLayoutConstraint.activate(constraints)
         

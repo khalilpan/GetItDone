@@ -11,7 +11,6 @@ class ListController: UIViewController{
     
     lazy var headerView: UIView = {
         let view = CustomHeader()
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
