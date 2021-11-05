@@ -52,16 +52,16 @@ class WelcomeController: UIViewController {
     @objc func handleButtonPress() {
         print("Next Button clicked.")
 
-//        // to add animation when button pressed
-//        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn) {
-//            // will run when action starts(will decrease button size)
-//            self.nextButton.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
-//        } completion: { _ in
-//            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn) {
-//                // will run when action got complete(will change button size back)
-//                self.nextButton.transform = CGAffineTransform(scaleX: 1, y: 1)
-//            }
-//        }
+        // to add animation when button pressed
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn) {
+            // will run when action starts(will decrease button size)
+            self.nextButton.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        } completion: { _ in
+            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn) {
+                // will run when action got complete(will change button size back)
+                self.nextButton.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }
+        }
     }
 }
 
