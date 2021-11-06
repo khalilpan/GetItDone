@@ -21,7 +21,7 @@ class BackgroundGradient: UIView {
 //        UIColor.init(red: CGFloat(58)/255.0, green: CGFloat(123)/255.0, blue: CGFloat(213)/255.0, alpha: 1.0).cgColor
     ]
     
-    override init(frame: CGRect) {
+    override init(frame: CGRect = .zero) {
         super.init(frame: frame)
      
         self.translatesAutoresizingMaskIntoConstraints = false

@@ -72,6 +72,8 @@ class WelcomeScreen: UIView {
     }
 }
 
+//MARK: - CodeView
+
 extension WelcomeScreen: CodeView {
     func buildView() {
         addSubview(backGround)

@@ -10,6 +10,8 @@ import UIKit
 class ListScreen: UIView {
     var addItemAction: (() -> Void)?
     
+    let newItemPopup = NewItemPopup()
+    
     lazy var headerView: UIView = {
         let view = CustomHeader(title: "Stuff to get done.", subTitle: "0 Left")
         view.delegate = self
@@ -29,10 +31,12 @@ class ListScreen: UIView {
     }
 }
 
+//MARK: - CodeView
 
 extension ListScreen: CodeView {
     func buildView() {
         addSubview(headerView)
+        addSubview(newItemPopup)
     }
     
     func setupConstraints() {
@@ -42,6 +46,12 @@ extension ListScreen: CodeView {
         constraints.append(headerView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor))
         constraints.append(headerView.topAnchor.constraint(equalTo: topAnchor))
         constraints.append(headerView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.15))
+        
+        constraints.append(newItemPopup.bottomAnchor.constraint(equalTo: bottomAnchor))
+        constraints.append(newItemPopup.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.9))
+        constraints.append(newItemPopup.centerXAnchor.constraint(equalTo: centerXAnchor))
+        constraints.append(newItemPopup.heightAnchor.constraint(equalToConstant: 80))
+        
         
         NSLayoutConstraint.activate(constraints)
     }
