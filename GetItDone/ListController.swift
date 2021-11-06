@@ -13,6 +13,8 @@ class ListController: UIViewController{
     
     override func loadView() {
         listScreen.addItemAction = addItem
+        listScreen.cancelButtonAction = cancelButtonAction
+        listScreen.saveButtonAction = saveButtonAction
     }
     
     override func viewDidLoad() {
@@ -21,6 +23,14 @@ class ListController: UIViewController{
     
     func addItem() {
         print("from controller")
+    }
+    
+    func cancelButtonAction() {
+        print("Heeey canceeeel")
+    }
+    
+    func saveButtonAction() {
+        print("heeeey saaaave")
     }
 }
 

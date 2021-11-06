@@ -9,6 +9,7 @@ import UIKit
 
 class CustomHeader: UIView {
     let background = BackgroundGradient()
+    
     var delegate: CustomHeaderProtocol?
     
     lazy var titleLable: UILabel = {
@@ -22,7 +23,7 @@ class CustomHeader: UIView {
     }()
     
     lazy var addbutton : UIButton = {
-        let view = CustomButton(title: "+", type: .squareIcon)
+        let view = CustomButton(title: "+", type: .squareIcon, cornerRadius: 10)
         view.addTarget(self, action: #selector(self.handleAddButton), for: .touchUpInside)
         return view
     }()

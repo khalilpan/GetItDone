@@ -9,8 +9,11 @@ import UIKit
 
 class ListScreen: UIView {
     var addItemAction: (() -> Void)?
+    var cancelButtonAction: (() -> Void)?
+    var saveButtonAction: (() -> Void)?
     
     let newItemPopup = NewItemPopup()
+    
     
     lazy var headerView: UIView = {
         let view = CustomHeader(title: "Stuff to get done.", subTitle: "0 Left")
@@ -22,6 +25,8 @@ class ListScreen: UIView {
         super.init(frame: frame)
         
         backgroundColor = .white
+        
+        newItemPopup.delegate = self
         
         setupView()
     }
@@ -50,7 +55,7 @@ extension ListScreen: CodeView {
         constraints.append(newItemPopup.bottomAnchor.constraint(equalTo: bottomAnchor))
         constraints.append(newItemPopup.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.9))
         constraints.append(newItemPopup.centerXAnchor.constraint(equalTo: centerXAnchor))
-        constraints.append(newItemPopup.heightAnchor.constraint(equalToConstant: 80))
+        constraints.append(newItemPopup.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.14))
         
         
         NSLayoutConstraint.activate(constraints)
@@ -59,7 +64,6 @@ extension ListScreen: CodeView {
     func setupAddicionalConfiguration() {
         
     }
-    
 }
 
 //MARK: - CustomHeaderProtocol
@@ -68,4 +72,16 @@ extension ListScreen: CustomHeaderProtocol {
     func addItem() {
         addItemAction?()
     }  
+}
+
+//MARK: - NewItemProtocol
+
+extension ListScreen: NewItemProtocol {
+    func addPressed() {
+        saveButtonAction?()
+    }
+    
+    func cancelPressed() {
+        cancelButtonAction?()
+    }
 }

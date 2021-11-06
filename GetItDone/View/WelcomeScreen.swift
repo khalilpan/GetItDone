@@ -39,7 +39,7 @@ class WelcomeScreen: UIView {
     }()
 
     lazy var nextButton: UIButton = {
-        let view = CustomButton(title: "START WINNING", type: .roundedText)
+        let view = CustomButton(title: "START WINNING", type: .roundedText, cornerRadius: 25)
         view.addTarget(self, action: #selector(self.buttonHandler), for: .touchUpInside)
         return view
     }()
