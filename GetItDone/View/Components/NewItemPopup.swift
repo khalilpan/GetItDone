@@ -11,16 +11,22 @@ class NewItemPopup: BackgroundGradient {
     
     var delegate: NewItemProtocol?
     
-    let cancelButton: UIButton = {
+    lazy var cancelButton: UIButton = {
         let view = CustomButton(title: " Cancel ", type: .roundedText, cornerRadius: 8)
         view.addTarget(self, action: #selector(handleCancelButto), for: .touchUpInside)
         
         return view
     }()
     
-    let saveButton: UIButton = {
+    lazy var saveButton: UIButton = {
         let view = CustomButton(title: " Add ", type: .roundedText, cornerRadius: 8)
         view.addTarget(self, action: #selector(handleAddButton), for: .touchUpInside)
+        return view
+    }()
+    
+    lazy var newItemTextField: UITextField = {
+        let view = CustomTextField(placeHolder: " insert new todo here ", cornerRadius: 8.0)
+        view.backgroundColor = .white
         return view
     }()
     
@@ -51,6 +57,7 @@ extension NewItemPopup: CodeView {
     func buildView() {
         addSubview(cancelButton)
         addSubview(saveButton)
+        addSubview(newItemTextField)
     }
     
     func setupConstraints() {
@@ -62,6 +69,10 @@ extension NewItemPopup: CodeView {
         constraints.append(saveButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20))
         constraints.append(saveButton.topAnchor.constraint(equalTo: topAnchor, constant: 10))
         
+        constraints.append(newItemTextField.centerXAnchor.constraint(equalTo: centerXAnchor))
+        constraints.append(newItemTextField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15))
+        constraints.append(newItemTextField.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5))
+//        constraints.append(newItemTextField.heightAnchor.constraint(equalToConstant: 30))
         
         NSLayoutConstraint.activate(constraints)
     }

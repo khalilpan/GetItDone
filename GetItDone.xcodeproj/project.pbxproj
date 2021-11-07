@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E420942027368638005D99EF /* NewItemPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E420941F27368638005D99EF /* NewItemPopup.swift */; };
 		E4209425273694E3005D99EF /* NewItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4209424273694E3005D99EF /* NewItemProtocol.swift */; };
+		E420942D2736A1A1005D99EF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E420942C2736A1A1005D99EF /* CustomTextField.swift */; };
 		E438D93E273451C700D86ADD /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438D93D273451C700D86ADD /* CodeView.swift */; };
 		E438D943273456AF00D86ADD /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438D942273456AF00D86ADD /* BackgroundGradient.swift */; };
 		E43EEE7D27358DD000D8264C /* OptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43EEE7C27358DD000D8264C /* OptionSet.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		E420941F27368638005D99EF /* NewItemPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemPopup.swift; sourceTree = "<group>"; };
 		E4209424273694E3005D99EF /* NewItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemProtocol.swift; sourceTree = "<group>"; };
+		E420942C2736A1A1005D99EF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E438D93D273451C700D86ADD /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		E438D942273456AF00D86ADD /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
 		E43EEE7C27358DD000D8264C /* OptionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSet.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				E44FE87D27353DBC0043A0C8 /* CustomButton.swift */,
 				E44FE88727354CA90043A0C8 /* CustomHeader.swift */,
 				E420941F27368638005D99EF /* NewItemPopup.swift */,
+				E420942C2736A1A1005D99EF /* CustomTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				E4E9C9AD27345C0800D48C62 /* UiColorExtention.swift in Sources */,
 				E44FE87E27353DBC0043A0C8 /* CustomButton.swift in Sources */,
 				E43EEE822735911A00D8264C /* WelcomeScreen.swift in Sources */,
+				E420942D2736A1A1005D99EF /* CustomTextField.swift in Sources */,
 				E4C862D9273449A000DD247C /* GetItDone.xcdatamodeld in Sources */,
 				E4C862CF273449A000DD247C /* AppDelegate.swift in Sources */,
 				E438D93E273451C700D86ADD /* CodeView.swift in Sources */,
